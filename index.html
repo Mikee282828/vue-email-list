@@ -17,7 +17,7 @@
     
 
     <div id="app">
-        <h1 v-for="element in mail">
+        <h1 v-for="element in mail" v-show="mail.length == 10">
             {{ element }}
         </h1>
     </div>
