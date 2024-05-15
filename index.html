@@ -17,7 +17,9 @@
     
 
     <div id="app">
-        <h1>{{ message }}</h1>
+        <h1 v-for="element in mail">
+            {{ element }}
+        </h1>
     </div>
 
     <script src="main.js"></script>
