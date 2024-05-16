@@ -20,11 +20,11 @@
         
         <h1>Inserisci il numero di mail che vuoi generare: </h1>
 
-        <input type="number" v-model="nMailInserita">
+        <input type="number" v-model="nMailInserita" @keyup.enter="richiesta(nMailInserita)">
         <button @click="richiesta(nMailInserita)">Submit</button>
         <h2 v-for="element in mail" v-show="mail.length == nMail">
             {{ element }}
-        </h1>
+        </h2>
     </div>
 
     <script src="main.js"></script>
